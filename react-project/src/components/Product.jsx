@@ -1,10 +1,10 @@
 // src/Product.jsx
 
-export default function Product() {
+export default function Product(props) {
   return (
     <div>
-            <h2>Tacos</h2>
-      <p>Price: 999 credits</p>   {" "}
+            <h2>{props.name}</h2>
+      <p>Price: {props.cost} credits</p>   {" "}
     </div>
   );
 }
